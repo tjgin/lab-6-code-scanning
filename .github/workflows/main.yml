@@ -25,5 +25,9 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-results
-          path: trivy-results.sarif
+            name: trivy-results
+            path: trivy-results.sarif
+
+  image_scan:
+      name: Build Image and Run Image Scan
+      runs-on: ubuntu-latest
